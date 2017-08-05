@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E228410F1F35DD9000FB1610 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E228410E1F35DD9000FB1610 /* CGFloat+Extensions.swift */; };
 		E22841171F35E69800FB1610 /* Sugar.h in Headers */ = {isa = PBXBuildFile; fileRef = E22841151F35E69800FB1610 /* Sugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E23DED621F35EE8D007CB0BC /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23DED611F35EE8D007CB0BC /* UIView+Extensions.swift */; };
+		E23DED661F35EECA007CB0BC /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23DED651F35EECA007CB0BC /* UIViewController+Extensions.swift */; };
+		E23DED691F35EF01007CB0BC /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23DED681F35EF01007CB0BC /* UIApplication+Extensions.swift */; };
+		E23DED6C1F35EF64007CB0BC /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23DED6B1F35EF64007CB0BC /* String+Extensions.swift */; };
+		E23DED6F1F35EF8C007CB0BC /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23DED6E1F35EF8C007CB0BC /* CGFloat+Extensions.swift */; };
+		E23DED711F35EFCB007CB0BC /* Sequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23DED701F35EFCB007CB0BC /* Sequence+Extensions.swift */; };
+		E23DED741F35F039007CB0BC /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23DED731F35F039007CB0BC /* Int+Extensions.swift */; };
 		E2AF04D31F3416A300742F0B /* Sugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2AF04C91F3416A300742F0B /* Sugar.framework */; };
 		E2AF04D81F3416A300742F0B /* SugarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AF04D71F3416A300742F0B /* SugarTests.swift */; };
 /* End PBXBuildFile section */
@@ -24,9 +30,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E228410E1F35DD9000FB1610 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGFloat+Extensions.swift"; path = "Source/Extensions/UIKit/CGFloat+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		E22841141F35E69800FB1610 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Source/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 		E22841151F35E69800FB1610 /* Sugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sugar.h; path = "Source/Supporting Files/Sugar.h"; sourceTree = SOURCE_ROOT; };
+		E23DED611F35EE8D007CB0BC /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "Source/Extensions/UIKit/UIView+Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		E23DED651F35EECA007CB0BC /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "Source/Extensions/UIKit/UIViewController+Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		E23DED681F35EF01007CB0BC /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIApplication+Extensions.swift"; path = "Source/Extensions/UIKit/UIApplication+Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		E23DED6B1F35EF64007CB0BC /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Source/Extensions/Foundation/String+Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		E23DED6E1F35EF8C007CB0BC /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGFloat+Extensions.swift"; path = "Source/Extensions/CoreGraphics/CGFloat+Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		E23DED701F35EFCB007CB0BC /* Sequence+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Sequence+Extensions.swift"; path = "Source/Extensions/Foundation/Sequence+Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		E23DED731F35F039007CB0BC /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Int+Extensions.swift"; path = "Source/Extensions/Foundation/Int+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		E2AF04C91F3416A300742F0B /* Sugar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sugar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AF04D21F3416A300742F0B /* SugarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SugarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AF04D71F3416A300742F0B /* SugarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarTests.swift; sourceTree = "<group>"; };
@@ -55,6 +67,8 @@
 		E22840FB1F35DCFB00FB1610 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E23DED6D1F35EF71007CB0BC /* CoreGraphics */,
+				E23DED6A1F35EF4D007CB0BC /* Foundation */,
 				E22840FC1F35DD0200FB1610 /* UIKit */,
 			);
 			name = Extensions;
@@ -63,7 +77,9 @@
 		E22840FC1F35DD0200FB1610 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				E228410E1F35DD9000FB1610 /* CGFloat+Extensions.swift */,
+				E23DED611F35EE8D007CB0BC /* UIView+Extensions.swift */,
+				E23DED651F35EECA007CB0BC /* UIViewController+Extensions.swift */,
+				E23DED681F35EF01007CB0BC /* UIApplication+Extensions.swift */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -75,6 +91,24 @@
 				E22841151F35E69800FB1610 /* Sugar.h */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E23DED6A1F35EF4D007CB0BC /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				E23DED731F35F039007CB0BC /* Int+Extensions.swift */,
+				E23DED701F35EFCB007CB0BC /* Sequence+Extensions.swift */,
+				E23DED6B1F35EF64007CB0BC /* String+Extensions.swift */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		E23DED6D1F35EF71007CB0BC /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				E23DED6E1F35EF8C007CB0BC /* CGFloat+Extensions.swift */,
+			);
+			name = CoreGraphics;
 			sourceTree = "<group>";
 		};
 		E2AF04BF1F3416A300742F0B = {
@@ -227,7 +261,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E228410F1F35DD9000FB1610 /* CGFloat+Extensions.swift in Sources */,
+				E23DED711F35EFCB007CB0BC /* Sequence+Extensions.swift in Sources */,
+				E23DED6C1F35EF64007CB0BC /* String+Extensions.swift in Sources */,
+				E23DED6F1F35EF8C007CB0BC /* CGFloat+Extensions.swift in Sources */,
+				E23DED621F35EE8D007CB0BC /* UIView+Extensions.swift in Sources */,
+				E23DED741F35F039007CB0BC /* Int+Extensions.swift in Sources */,
+				E23DED661F35EECA007CB0BC /* UIViewController+Extensions.swift in Sources */,
+				E23DED691F35EF01007CB0BC /* UIApplication+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
