@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E228410C1F35DD7100FB1610 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E228410A1F35DD7100FB1610 /* Info.plist */; };
+		E228410D1F35DD7100FB1610 /* Sugar.h in Headers */ = {isa = PBXBuildFile; fileRef = E228410B1F35DD7100FB1610 /* Sugar.h */; };
+		E228410F1F35DD9000FB1610 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E228410E1F35DD9000FB1610 /* CGFloat+Extensions.swift */; };
 		E2AF04D31F3416A300742F0B /* Sugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2AF04C91F3416A300742F0B /* Sugar.framework */; };
 		E2AF04D81F3416A300742F0B /* SugarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AF04D71F3416A300742F0B /* SugarTests.swift */; };
-		E2AF04DA1F3416A300742F0B /* Sugar.h in Headers */ = {isa = PBXBuildFile; fileRef = E2AF04CC1F3416A300742F0B /* Sugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2AF04E41F3416DD00742F0B /* Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AF04E31F3416DD00742F0B /* Sugar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,13 +25,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E228410A1F35DD7100FB1610 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Source/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
+		E228410B1F35DD7100FB1610 /* Sugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sugar.h; path = "Source/Supporting Files/Sugar.h"; sourceTree = SOURCE_ROOT; };
+		E228410E1F35DD9000FB1610 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGFloat+Extensions.swift"; path = "Source/Extensions/UIKit/CGFloat+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		E2AF04C91F3416A300742F0B /* Sugar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sugar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2AF04CC1F3416A300742F0B /* Sugar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sugar.h; sourceTree = "<group>"; };
-		E2AF04CD1F3416A300742F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2AF04D21F3416A300742F0B /* SugarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SugarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AF04D71F3416A300742F0B /* SugarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarTests.swift; sourceTree = "<group>"; };
 		E2AF04D91F3416A300742F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2AF04E31F3416DD00742F0B /* Sugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sugar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +53,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E22840FB1F35DCFB00FB1610 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E22840FC1F35DD0200FB1610 /* UIKit */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		E22840FC1F35DD0200FB1610 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				E228410E1F35DD9000FB1610 /* CGFloat+Extensions.swift */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		E22841091F35DD5600FB1610 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E228410A1F35DD7100FB1610 /* Info.plist */,
+				E228410B1F35DD7100FB1610 /* Sugar.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E2AF04BF1F3416A300742F0B = {
 			isa = PBXGroup;
 			children = (
-				E2AF04CB1F3416A300742F0B /* Sugar */,
+				E2AF04CB1F3416A300742F0B /* Source */,
 				E2AF04D61F3416A300742F0B /* SugarTests */,
 				E2AF04CA1F3416A300742F0B /* Products */,
 			);
@@ -70,13 +96,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E2AF04CB1F3416A300742F0B /* Sugar */ = {
+		E2AF04CB1F3416A300742F0B /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E2AF04CC1F3416A300742F0B /* Sugar.h */,
-				E2AF04E31F3416DD00742F0B /* Sugar.swift */,
-				E2AF04CD1F3416A300742F0B /* Info.plist */,
+				E22840FB1F35DCFB00FB1610 /* Extensions */,
+				E22841091F35DD5600FB1610 /* Supporting Files */,
 			);
+			name = Source;
 			path = Sugar;
 			sourceTree = "<group>";
 		};
@@ -96,7 +122,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2AF04DA1F3416A300742F0B /* Sugar.h in Headers */,
+				E228410D1F35DD7100FB1610 /* Sugar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E228410C1F35DD7100FB1610 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2AF04E41F3416DD00742F0B /* Sugar.swift in Sources */,
+				E228410F1F35DD9000FB1610 /* CGFloat+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +439,7 @@
 				E2AF04DF1F3416A300742F0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2AF04E01F3416A300742F0B /* Build configuration list for PBXNativeTarget "SugarTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +448,7 @@
 				E2AF04E21F3416A300742F0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
