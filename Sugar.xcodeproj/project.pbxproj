@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E228410C1F35DD7100FB1610 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E228410A1F35DD7100FB1610 /* Info.plist */; };
-		E228410D1F35DD7100FB1610 /* Sugar.h in Headers */ = {isa = PBXBuildFile; fileRef = E228410B1F35DD7100FB1610 /* Sugar.h */; };
 		E228410F1F35DD9000FB1610 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E228410E1F35DD9000FB1610 /* CGFloat+Extensions.swift */; };
+		E22841171F35E69800FB1610 /* Sugar.h in Headers */ = {isa = PBXBuildFile; fileRef = E22841151F35E69800FB1610 /* Sugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2AF04D31F3416A300742F0B /* Sugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2AF04C91F3416A300742F0B /* Sugar.framework */; };
 		E2AF04D81F3416A300742F0B /* SugarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AF04D71F3416A300742F0B /* SugarTests.swift */; };
 /* End PBXBuildFile section */
@@ -25,9 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E228410A1F35DD7100FB1610 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Source/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
-		E228410B1F35DD7100FB1610 /* Sugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sugar.h; path = "Source/Supporting Files/Sugar.h"; sourceTree = SOURCE_ROOT; };
 		E228410E1F35DD9000FB1610 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGFloat+Extensions.swift"; path = "Source/Extensions/UIKit/CGFloat+Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		E22841141F35E69800FB1610 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Source/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
+		E22841151F35E69800FB1610 /* Sugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sugar.h; path = "Source/Supporting Files/Sugar.h"; sourceTree = SOURCE_ROOT; };
 		E2AF04C91F3416A300742F0B /* Sugar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sugar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AF04D21F3416A300742F0B /* SugarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SugarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AF04D71F3416A300742F0B /* SugarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarTests.swift; sourceTree = "<group>"; };
@@ -72,8 +71,8 @@
 		E22841091F35DD5600FB1610 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E228410A1F35DD7100FB1610 /* Info.plist */,
-				E228410B1F35DD7100FB1610 /* Sugar.h */,
+				E22841141F35E69800FB1610 /* Info.plist */,
+				E22841151F35E69800FB1610 /* Sugar.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,7 +121,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E228410D1F35DD7100FB1610 /* Sugar.h in Headers */,
+				E22841171F35E69800FB1610 /* Sugar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +210,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E228410C1F35DD7100FB1610 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +361,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sugar/Info.plist;
+				INFOPLIST_FILE = "Source/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pxlshpr.Sugar;
@@ -384,7 +382,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sugar/Info.plist;
+				INFOPLIST_FILE = "Source/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pxlshpr.Sugar;
