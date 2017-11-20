@@ -19,6 +19,7 @@
 		E2CEC1091FC2E50800D951BE /* Sugar.h in Headers */ = {isa = PBXBuildFile; fileRef = E2CEC1001FC2E50700D951BE /* Sugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2CEC10A1FC2E50800D951BE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2CEC1011FC2E50700D951BE /* Info.plist */; };
 		E2CEC10E1FC2E87500D951BE /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEC10D1FC2E87500D951BE /* Bundle+Extensions.swift */; };
+		E2CEC1101FC30B7E00D951BE /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEC10F1FC30B7E00D951BE /* UIImageView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		E2CEC1001FC2E50700D951BE /* Sugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sugar.h; sourceTree = "<group>"; };
 		E2CEC1011FC2E50700D951BE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2CEC10D1FC2E87500D951BE /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		E2CEC10F1FC30B7E00D951BE /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				E2CEC0F81FC2E50700D951BE /* UIViewController+Extensions.swift */,
 				E2CEC0F91FC2E50700D951BE /* UIView+Extensions.swift */,
 				E2CEC0FA1FC2E50700D951BE /* UIApplication+Extensions.swift */,
+				E2CEC10F1FC30B7E00D951BE /* UIImageView+Extensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				E2CEC1051FC2E50800D951BE /* UIApplication+Extensions.swift in Sources */,
 				E2CEC1071FC2E50800D951BE /* String+Extensions.swift in Sources */,
 				E2CEC1081FC2E50800D951BE /* Sequence+Extensions.swift in Sources */,
+				E2CEC1101FC30B7E00D951BE /* UIImageView+Extensions.swift in Sources */,
 				E2CEC1041FC2E50800D951BE /* UIView+Extensions.swift in Sources */,
 				E2CEC1031FC2E50800D951BE /* UIViewController+Extensions.swift in Sources */,
 				E2CEC1061FC2E50800D951BE /* Int+Extensions.swift in Sources */,
