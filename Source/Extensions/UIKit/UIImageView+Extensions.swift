@@ -2,7 +2,7 @@ import UIKit
 
 public extension UIImageView {
   
-  public func addHeightConstraint() {
+  public func addAspectRatioHeightConstraint() {
     guard let image = self.image else { return }
     self.addConstraint(NSLayoutConstraint(item: self,
                                           attribute: .height,
@@ -13,7 +13,7 @@ public extension UIImageView {
                                           constant: 0))
   }
   
-  public func addWidthConstraint() {
+  public func addAspectRatioWidthConstraint() {
     guard let image = self.image else { return }
     self.addConstraint(NSLayoutConstraint(item: self,
                                           attribute: .width,

@@ -93,3 +93,16 @@ public extension UIView {
     self.addSubview(colorView)
   }
 }
+
+public extension UIView {
+  
+  public func addEqualDimensionsConstraint() {
+    self.addConstraint(NSLayoutConstraint(item: self,
+                                          attribute: .height,
+                                          relatedBy: .equal,
+                                          toItem: self,
+                                          attribute: .width,
+                                          multiplier: 1.0,
+                                          constant: 0))
+  }
+}
