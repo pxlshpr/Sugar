@@ -96,13 +96,33 @@ public extension UIView {
 
 public extension UIView {
   
-  public func addEqualDimensionsConstraint() {
+  public func widthToHeight() {
+    self.width(toHeightOf: self)
+  }
+  
+  public func heightToWidth() {
+    self.height(toWidthOf: self)
+  }
+  
+  public func width(toHeightOf view: UIView) {
+    self.translatesAutoresizingMaskIntoConstraints = false
+    self.addConstraint(NSLayoutConstraint(item: self,
+                                          attribute: .width,
+                                          relatedBy: .equal,
+                                          toItem: view,
+                                          attribute: .height,
+                                          multiplier: 1.0,
+                                          constant: 0.0))
+  }
+  
+  public func height(toWidthOf view: UIView) {
+    self.translatesAutoresizingMaskIntoConstraints = false
     self.addConstraint(NSLayoutConstraint(item: self,
                                           attribute: .height,
                                           relatedBy: .equal,
-                                          toItem: self,
+                                          toItem: view,
                                           attribute: .width,
                                           multiplier: 1.0,
-                                          constant: 0))
+                                          constant: 0.0))
   }
 }
