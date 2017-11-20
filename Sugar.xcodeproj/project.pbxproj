@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E22841171F35E69800FB1610 /* Sugar.h in Headers */ = {isa = PBXBuildFile; fileRef = E22841151F35E69800FB1610 /* Sugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E23DED621F35EE8D007CB0BC /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23DED611F35EE8D007CB0BC /* UIView+Extensions.swift */; };
-		E23DED661F35EECA007CB0BC /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23DED651F35EECA007CB0BC /* UIViewController+Extensions.swift */; };
-		E23DED691F35EF01007CB0BC /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23DED681F35EF01007CB0BC /* UIApplication+Extensions.swift */; };
-		E23DED6C1F35EF64007CB0BC /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23DED6B1F35EF64007CB0BC /* String+Extensions.swift */; };
-		E23DED6F1F35EF8C007CB0BC /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23DED6E1F35EF8C007CB0BC /* CGFloat+Extensions.swift */; };
-		E23DED711F35EFCB007CB0BC /* Sequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23DED701F35EFCB007CB0BC /* Sequence+Extensions.swift */; };
-		E23DED741F35F039007CB0BC /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23DED731F35F039007CB0BC /* Int+Extensions.swift */; };
 		E2AF04D31F3416A300742F0B /* Sugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2AF04C91F3416A300742F0B /* Sugar.framework */; };
 		E2AF04D81F3416A300742F0B /* SugarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AF04D71F3416A300742F0B /* SugarTests.swift */; };
+		E2CEC1021FC2E50800D951BE /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEC0F61FC2E50700D951BE /* CGFloat+Extensions.swift */; };
+		E2CEC1031FC2E50800D951BE /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEC0F81FC2E50700D951BE /* UIViewController+Extensions.swift */; };
+		E2CEC1041FC2E50800D951BE /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEC0F91FC2E50700D951BE /* UIView+Extensions.swift */; };
+		E2CEC1051FC2E50800D951BE /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEC0FA1FC2E50700D951BE /* UIApplication+Extensions.swift */; };
+		E2CEC1061FC2E50800D951BE /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEC0FC1FC2E50700D951BE /* Int+Extensions.swift */; };
+		E2CEC1071FC2E50800D951BE /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEC0FD1FC2E50700D951BE /* String+Extensions.swift */; };
+		E2CEC1081FC2E50800D951BE /* Sequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEC0FE1FC2E50700D951BE /* Sequence+Extensions.swift */; };
+		E2CEC1091FC2E50800D951BE /* Sugar.h in Headers */ = {isa = PBXBuildFile; fileRef = E2CEC1001FC2E50700D951BE /* Sugar.h */; };
+		E2CEC10A1FC2E50800D951BE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2CEC1011FC2E50700D951BE /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,19 +31,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E22841141F35E69800FB1610 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Source/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
-		E22841151F35E69800FB1610 /* Sugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sugar.h; path = "Source/Supporting Files/Sugar.h"; sourceTree = SOURCE_ROOT; };
-		E23DED611F35EE8D007CB0BC /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "Source/Extensions/UIKit/UIView+Extensions.swift"; sourceTree = SOURCE_ROOT; };
-		E23DED651F35EECA007CB0BC /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "Source/Extensions/UIKit/UIViewController+Extensions.swift"; sourceTree = SOURCE_ROOT; };
-		E23DED681F35EF01007CB0BC /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIApplication+Extensions.swift"; path = "Source/Extensions/UIKit/UIApplication+Extensions.swift"; sourceTree = SOURCE_ROOT; };
-		E23DED6B1F35EF64007CB0BC /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Source/Extensions/Foundation/String+Extensions.swift"; sourceTree = SOURCE_ROOT; };
-		E23DED6E1F35EF8C007CB0BC /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGFloat+Extensions.swift"; path = "Source/Extensions/CoreGraphics/CGFloat+Extensions.swift"; sourceTree = SOURCE_ROOT; };
-		E23DED701F35EFCB007CB0BC /* Sequence+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Sequence+Extensions.swift"; path = "Source/Extensions/Foundation/Sequence+Extensions.swift"; sourceTree = SOURCE_ROOT; };
-		E23DED731F35F039007CB0BC /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Int+Extensions.swift"; path = "Source/Extensions/Foundation/Int+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		E2AF04C91F3416A300742F0B /* Sugar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sugar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AF04D21F3416A300742F0B /* SugarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SugarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AF04D71F3416A300742F0B /* SugarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarTests.swift; sourceTree = "<group>"; };
 		E2AF04D91F3416A300742F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2CEC0F61FC2E50700D951BE /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		E2CEC0F81FC2E50700D951BE /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		E2CEC0F91FC2E50700D951BE /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		E2CEC0FA1FC2E50700D951BE /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		E2CEC0FC1FC2E50700D951BE /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		E2CEC0FD1FC2E50700D951BE /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		E2CEC0FE1FC2E50700D951BE /* Sequence+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+Extensions.swift"; sourceTree = "<group>"; };
+		E2CEC1001FC2E50700D951BE /* Sugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sugar.h; sourceTree = "<group>"; };
+		E2CEC1011FC2E50700D951BE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,57 +65,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E22840FB1F35DCFB00FB1610 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				E23DED6D1F35EF71007CB0BC /* CoreGraphics */,
-				E23DED6A1F35EF4D007CB0BC /* Foundation */,
-				E22840FC1F35DD0200FB1610 /* UIKit */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
-		E22840FC1F35DD0200FB1610 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				E23DED611F35EE8D007CB0BC /* UIView+Extensions.swift */,
-				E23DED651F35EECA007CB0BC /* UIViewController+Extensions.swift */,
-				E23DED681F35EF01007CB0BC /* UIApplication+Extensions.swift */,
-			);
-			name = UIKit;
-			sourceTree = "<group>";
-		};
-		E22841091F35DD5600FB1610 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E22841141F35E69800FB1610 /* Info.plist */,
-				E22841151F35E69800FB1610 /* Sugar.h */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E23DED6A1F35EF4D007CB0BC /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				E23DED731F35F039007CB0BC /* Int+Extensions.swift */,
-				E23DED701F35EFCB007CB0BC /* Sequence+Extensions.swift */,
-				E23DED6B1F35EF64007CB0BC /* String+Extensions.swift */,
-			);
-			name = Foundation;
-			sourceTree = "<group>";
-		};
-		E23DED6D1F35EF71007CB0BC /* CoreGraphics */ = {
-			isa = PBXGroup;
-			children = (
-				E23DED6E1F35EF8C007CB0BC /* CGFloat+Extensions.swift */,
-			);
-			name = CoreGraphics;
-			sourceTree = "<group>";
-		};
 		E2AF04BF1F3416A300742F0B = {
 			isa = PBXGroup;
 			children = (
-				E2AF04CB1F3416A300742F0B /* Source */,
+				E2CEC0F31FC2E50700D951BE /* Source */,
 				E2AF04D61F3416A300742F0B /* SugarTests */,
 				E2AF04CA1F3416A300742F0B /* Products */,
 			);
@@ -129,16 +83,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E2AF04CB1F3416A300742F0B /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				E22840FB1F35DCFB00FB1610 /* Extensions */,
-				E22841091F35DD5600FB1610 /* Supporting Files */,
-			);
-			name = Source;
-			path = Sugar;
-			sourceTree = "<group>";
-		};
 		E2AF04D61F3416A300742F0B /* SugarTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +92,62 @@
 			path = SugarTests;
 			sourceTree = "<group>";
 		};
+		E2CEC0F31FC2E50700D951BE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E2CEC0F41FC2E50700D951BE /* Extensions */,
+				E2CEC0FF1FC2E50700D951BE /* Supporting Files */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E2CEC0F41FC2E50700D951BE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2CEC0F51FC2E50700D951BE /* CoreGraphics */,
+				E2CEC0F71FC2E50700D951BE /* UIKit */,
+				E2CEC0FB1FC2E50700D951BE /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2CEC0F51FC2E50700D951BE /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				E2CEC0F61FC2E50700D951BE /* CGFloat+Extensions.swift */,
+			);
+			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		E2CEC0F71FC2E50700D951BE /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				E2CEC0F81FC2E50700D951BE /* UIViewController+Extensions.swift */,
+				E2CEC0F91FC2E50700D951BE /* UIView+Extensions.swift */,
+				E2CEC0FA1FC2E50700D951BE /* UIApplication+Extensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		E2CEC0FB1FC2E50700D951BE /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				E2CEC0FC1FC2E50700D951BE /* Int+Extensions.swift */,
+				E2CEC0FD1FC2E50700D951BE /* String+Extensions.swift */,
+				E2CEC0FE1FC2E50700D951BE /* Sequence+Extensions.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		E2CEC0FF1FC2E50700D951BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2CEC1001FC2E50700D951BE /* Sugar.h */,
+				E2CEC1011FC2E50700D951BE /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -155,7 +155,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E22841171F35E69800FB1610 /* Sugar.h in Headers */,
+				E2CEC1091FC2E50800D951BE /* Sugar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2CEC10A1FC2E50800D951BE /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,13 +262,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E23DED711F35EFCB007CB0BC /* Sequence+Extensions.swift in Sources */,
-				E23DED6C1F35EF64007CB0BC /* String+Extensions.swift in Sources */,
-				E23DED6F1F35EF8C007CB0BC /* CGFloat+Extensions.swift in Sources */,
-				E23DED621F35EE8D007CB0BC /* UIView+Extensions.swift in Sources */,
-				E23DED741F35F039007CB0BC /* Int+Extensions.swift in Sources */,
-				E23DED661F35EECA007CB0BC /* UIViewController+Extensions.swift in Sources */,
-				E23DED691F35EF01007CB0BC /* UIApplication+Extensions.swift in Sources */,
+				E2CEC1051FC2E50800D951BE /* UIApplication+Extensions.swift in Sources */,
+				E2CEC1071FC2E50800D951BE /* String+Extensions.swift in Sources */,
+				E2CEC1081FC2E50800D951BE /* Sequence+Extensions.swift in Sources */,
+				E2CEC1041FC2E50800D951BE /* UIView+Extensions.swift in Sources */,
+				E2CEC1031FC2E50800D951BE /* UIViewController+Extensions.swift in Sources */,
+				E2CEC1061FC2E50800D951BE /* Int+Extensions.swift in Sources */,
+				E2CEC1021FC2E50800D951BE /* CGFloat+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

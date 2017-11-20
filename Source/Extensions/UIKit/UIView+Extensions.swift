@@ -64,6 +64,19 @@ public extension UIView {
   }
 }
 
+public extension UIView {
+  
+  public func toImage() -> UIImage? {
+    UIGraphicsBeginImageContextWithOptions(bounds.size, false, UIScreen.main.scale)
+    
+    drawHierarchy(in: self.bounds, afterScreenUpdates: true)
+    
+    let image = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+    return image
+  }
+}
+
 //MARK: - Miscellaneous
 public extension UIView {
   
