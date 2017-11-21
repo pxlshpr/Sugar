@@ -96,14 +96,17 @@ public extension UIView {
 
 public extension UIView {
   
+  //sets a constraint to make the width match the height
   public func widthToHeight() {
     self.width(toHeightOf: self)
   }
   
+  //sets a constraint to make the height match the width
   public func heightToWidth() {
     self.height(toWidthOf: self)
   }
   
+  //sets the width to match the height of the provided view
   public func width(toHeightOf view: UIView) {
     self.translatesAutoresizingMaskIntoConstraints = false
     self.superview?.addConstraint(NSLayoutConstraint(item: self,
@@ -115,6 +118,7 @@ public extension UIView {
                                                      constant: 0.0))
   }
   
+  //sets the height to match the weight of the provided view
   public func height(toWidthOf view: UIView) {
     self.translatesAutoresizingMaskIntoConstraints = false
     self.superview?.addConstraint(NSLayoutConstraint(item: self,
@@ -124,5 +128,13 @@ public extension UIView {
                                                      attribute: .width,
                                                      multiplier: 1.0,
                                                      constant: 0.0))
+  }
+}
+
+public extension UIView {
+
+  public func rotate(degrees: CGFloat) {
+    let radians = (CGFloat.pi / 180.0) * degrees
+    self.transform = CGAffineTransform(rotationAngle: radians)
   }
 }
