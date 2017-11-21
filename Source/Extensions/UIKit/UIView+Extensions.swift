@@ -106,23 +106,23 @@ public extension UIView {
   
   public func width(toHeightOf view: UIView) {
     self.translatesAutoresizingMaskIntoConstraints = false
-    self.addConstraint(NSLayoutConstraint(item: self,
-                                          attribute: .width,
-                                          relatedBy: .equal,
-                                          toItem: view,
-                                          attribute: .height,
-                                          multiplier: 1.0,
-                                          constant: 0.0))
+    self.superview?.addConstraint(NSLayoutConstraint(item: self,
+                                                     attribute: .width,
+                                                     relatedBy: .equal,
+                                                     toItem: view,
+                                                     attribute: .height,
+                                                     multiplier: 1.0,
+                                                     constant: 0.0))
   }
   
   public func height(toWidthOf view: UIView) {
     self.translatesAutoresizingMaskIntoConstraints = false
-    self.addConstraint(NSLayoutConstraint(item: self,
-                                          attribute: .height,
-                                          relatedBy: .equal,
-                                          toItem: view,
-                                          attribute: .width,
-                                          multiplier: 1.0,
-                                          constant: 0.0))
+    self.superview?.addConstraint(NSLayoutConstraint(item: self,
+                                                     attribute: .height,
+                                                     relatedBy: .equal,
+                                                     toItem: view,
+                                                     attribute: .width,
+                                                     multiplier: 1.0,
+                                                     constant: 0.0))
   }
 }
