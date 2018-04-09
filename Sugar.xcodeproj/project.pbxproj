@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E2AF04D31F3416A300742F0B /* Sugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2AF04C91F3416A300742F0B /* Sugar.framework */; };
-		E2AF04D81F3416A300742F0B /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AF04D71F3416A300742F0B /* Tests.swift */; };
+		E2AF04D81F3416A300742F0B /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AF04D71F3416A300742F0B /* DateTests.swift */; };
+		E2BB71CD207BEEC30019C8B6 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB71CC207BEEC30019C8B6 /* Date.swift */; };
 		E2CEC1021FC2E50800D951BE /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEC0F61FC2E50700D951BE /* CGFloat.swift */; };
 		E2CEC1031FC2E50800D951BE /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEC0F81FC2E50700D951BE /* UIViewController.swift */; };
 		E2CEC1041FC2E50800D951BE /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEC0F91FC2E50700D951BE /* UIView.swift */; };
@@ -34,8 +35,9 @@
 /* Begin PBXFileReference section */
 		E2AF04C91F3416A300742F0B /* Sugar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sugar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AF04D21F3416A300742F0B /* SugarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SugarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2AF04D71F3416A300742F0B /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		E2AF04D71F3416A300742F0B /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		E2AF04D91F3416A300742F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2BB71CC207BEEC30019C8B6 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		E2CEC0F61FC2E50700D951BE /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		E2CEC0F81FC2E50700D951BE /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		E2CEC0F91FC2E50700D951BE /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -89,7 +91,7 @@
 		E2AF04D61F3416A300742F0B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E2AF04D71F3416A300742F0B /* Tests.swift */,
+				E2AF04D71F3416A300742F0B /* DateTests.swift */,
 				E2AF04D91F3416A300742F0B /* Info.plist */,
 			);
 			path = Tests;
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				E2CEC0F61FC2E50700D951BE /* CGFloat.swift */,
+				E2BB71CC207BEEC30019C8B6 /* Date.swift */,
 				E2CEC0F81FC2E50700D951BE /* UIViewController.swift */,
 				E2CEC0F91FC2E50700D951BE /* UIView.swift */,
 				E2CEC0FA1FC2E50700D951BE /* UIApplication.swift */,
@@ -178,7 +181,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = pxlshpr;
 				TargetAttributes = {
 					E2AF04C81F3416A300742F0B = {
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2CEC1051FC2E50800D951BE /* UIApplication.swift in Sources */,
+				E2BB71CD207BEEC30019C8B6 /* Date.swift in Sources */,
 				E2CEC1071FC2E50800D951BE /* String.swift in Sources */,
 				E2CEC1081FC2E50800D951BE /* Sequence.swift in Sources */,
 				E2CEC1101FC30B7E00D951BE /* UIImageView.swift in Sources */,
@@ -251,7 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2AF04D81F3416A300742F0B /* Tests.swift in Sources */,
+				E2AF04D81F3416A300742F0B /* DateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +284,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -287,6 +292,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -340,6 +346,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -347,6 +354,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -397,7 +405,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -419,7 +427,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pxlshpr.Sugar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -429,11 +437,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3EQ4PU3P2V;
-				INFOPLIST_FILE = SugarTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pxlshpr.SugarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -443,11 +451,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3EQ4PU3P2V;
-				INFOPLIST_FILE = SugarTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pxlshpr.SugarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
