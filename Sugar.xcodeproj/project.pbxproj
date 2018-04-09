@@ -10,6 +10,15 @@
 		E2AF04D31F3416A300742F0B /* Sugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2AF04C91F3416A300742F0B /* Sugar.framework */; };
 		E2AF04D81F3416A300742F0B /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AF04D71F3416A300742F0B /* DateTests.swift */; };
 		E2BB71CD207BEEC30019C8B6 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB71CC207BEEC30019C8B6 /* Date.swift */; };
+		E2BB71D0207BF0D30019C8B6 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB71CE207BF0A80019C8B6 /* StringTests.swift */; };
+		E2BB71D2207BF1160019C8B6 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB71D1207BF1160019C8B6 /* Enum.swift */; };
+		E2BB71D4207BF1230019C8B6 /* EnumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB71D3207BF1230019C8B6 /* EnumTests.swift */; };
+		E2BB71D8207BF19A0019C8B6 /* RandomNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB71D7207BF19A0019C8B6 /* RandomNumbersTests.swift */; };
+		E2BB71D9207BF1A50019C8B6 /* RandomNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB71D5207BF17B0019C8B6 /* RandomNumbers.swift */; };
+		E2BB71DD207BF23F0019C8B6 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB71DB207BF23B0019C8B6 /* Array.swift */; };
+		E2BB71DF207BF2730019C8B6 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB71DE207BF2730019C8B6 /* ArrayTests.swift */; };
+		E2BB71E1207BF2BD0019C8B6 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB71E0207BF2BD0019C8B6 /* UIColor.swift */; };
+		E2BB71E3207BF2D00019C8B6 /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB71E2207BF2D00019C8B6 /* UIColorTests.swift */; };
 		E2CEC1021FC2E50800D951BE /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEC0F61FC2E50700D951BE /* CGFloat.swift */; };
 		E2CEC1031FC2E50800D951BE /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEC0F81FC2E50700D951BE /* UIViewController.swift */; };
 		E2CEC1041FC2E50800D951BE /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEC0F91FC2E50700D951BE /* UIView.swift */; };
@@ -38,6 +47,15 @@
 		E2AF04D71F3416A300742F0B /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		E2AF04D91F3416A300742F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2BB71CC207BEEC30019C8B6 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		E2BB71CE207BF0A80019C8B6 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		E2BB71D1207BF1160019C8B6 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		E2BB71D3207BF1230019C8B6 /* EnumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumTests.swift; sourceTree = "<group>"; };
+		E2BB71D5207BF17B0019C8B6 /* RandomNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumbers.swift; sourceTree = "<group>"; };
+		E2BB71D7207BF19A0019C8B6 /* RandomNumbersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumbersTests.swift; sourceTree = "<group>"; };
+		E2BB71DB207BF23B0019C8B6 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		E2BB71DE207BF2730019C8B6 /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
+		E2BB71E0207BF2BD0019C8B6 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		E2BB71E2207BF2D00019C8B6 /* UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
 		E2CEC0F61FC2E50700D951BE /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		E2CEC0F81FC2E50700D951BE /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		E2CEC0F91FC2E50700D951BE /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -91,7 +109,12 @@
 		E2AF04D61F3416A300742F0B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				E2BB71DE207BF2730019C8B6 /* ArrayTests.swift */,
 				E2AF04D71F3416A300742F0B /* DateTests.swift */,
+				E2BB71D3207BF1230019C8B6 /* EnumTests.swift */,
+				E2BB71D7207BF19A0019C8B6 /* RandomNumbersTests.swift */,
+				E2BB71CE207BF0A80019C8B6 /* StringTests.swift */,
+				E2BB71E2207BF2D00019C8B6 /* UIColorTests.swift */,
 				E2AF04D91F3416A300742F0B /* Info.plist */,
 			);
 			path = Tests;
@@ -100,16 +123,20 @@
 		E2CEC0F31FC2E50700D951BE /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E2BB71DB207BF23B0019C8B6 /* Array.swift */,
+				E2CEC10D1FC2E87500D951BE /* Bundle.swift */,
 				E2CEC0F61FC2E50700D951BE /* CGFloat.swift */,
 				E2BB71CC207BEEC30019C8B6 /* Date.swift */,
-				E2CEC0F81FC2E50700D951BE /* UIViewController.swift */,
-				E2CEC0F91FC2E50700D951BE /* UIView.swift */,
-				E2CEC0FA1FC2E50700D951BE /* UIApplication.swift */,
-				E2CEC10F1FC30B7E00D951BE /* UIImageView.swift */,
 				E2CEC0FC1FC2E50700D951BE /* Int.swift */,
-				E2CEC0FD1FC2E50700D951BE /* String.swift */,
+				E2BB71D1207BF1160019C8B6 /* Enum.swift */,
+				E2BB71D5207BF17B0019C8B6 /* RandomNumbers.swift */,
 				E2CEC0FE1FC2E50700D951BE /* Sequence.swift */,
-				E2CEC10D1FC2E87500D951BE /* Bundle.swift */,
+				E2CEC0FD1FC2E50700D951BE /* String.swift */,
+				E2CEC0FA1FC2E50700D951BE /* UIApplication.swift */,
+				E2BB71E0207BF2BD0019C8B6 /* UIColor.swift */,
+				E2CEC10F1FC30B7E00D951BE /* UIImageView.swift */,
+				E2CEC0F91FC2E50700D951BE /* UIView.swift */,
+				E2CEC0F81FC2E50700D951BE /* UIViewController.swift */,
 				E2CEC0FF1FC2E50700D951BE /* Supporting Files */,
 			);
 			path = Source;
@@ -239,12 +266,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2CEC1051FC2E50800D951BE /* UIApplication.swift in Sources */,
+				E2BB71E1207BF2BD0019C8B6 /* UIColor.swift in Sources */,
 				E2BB71CD207BEEC30019C8B6 /* Date.swift in Sources */,
 				E2CEC1071FC2E50800D951BE /* String.swift in Sources */,
+				E2BB71D9207BF1A50019C8B6 /* RandomNumbers.swift in Sources */,
 				E2CEC1081FC2E50800D951BE /* Sequence.swift in Sources */,
+				E2BB71D2207BF1160019C8B6 /* Enum.swift in Sources */,
 				E2CEC1101FC30B7E00D951BE /* UIImageView.swift in Sources */,
 				E2CEC1041FC2E50800D951BE /* UIView.swift in Sources */,
 				E2CEC1031FC2E50800D951BE /* UIViewController.swift in Sources */,
+				E2BB71DD207BF23F0019C8B6 /* Array.swift in Sources */,
 				E2CEC1061FC2E50800D951BE /* Int.swift in Sources */,
 				E2CEC1021FC2E50800D951BE /* CGFloat.swift in Sources */,
 				E2CEC10E1FC2E87500D951BE /* Bundle.swift in Sources */,
@@ -255,7 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2BB71DF207BF2730019C8B6 /* ArrayTests.swift in Sources */,
+				E2BB71D8207BF19A0019C8B6 /* RandomNumbersTests.swift in Sources */,
+				E2BB71D0207BF0D30019C8B6 /* StringTests.swift in Sources */,
 				E2AF04D81F3416A300742F0B /* DateTests.swift in Sources */,
+				E2BB71D4207BF1230019C8B6 /* EnumTests.swift in Sources */,
+				E2BB71E3207BF2D00019C8B6 /* UIColorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

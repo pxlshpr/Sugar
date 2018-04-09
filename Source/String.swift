@@ -2,14 +2,31 @@ import Foundation
 
 public extension String {
   
+  /**
+   A string value that returns the first word of this string, as separated by whitespace. Any leading whitespaces or newlines are ignored.
+   */
   public var firstWord: String? {
-    return self.components(separatedBy: " ").first
+    return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).components(separatedBy: " ").first
   }
-  
+
+  /**
+   A string value that returns the first word of this string, as separated by whitespace. Any leading whitespaces or newlines are ignored.
+   */
   public var lastWord: String? {
-    return self.components(separatedBy: " ").last
+    return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).components(separatedBy: " ").last
   }
   
+  /**
+   A Boolean value indicating whether a string only contains hexadecimal characters.
+   */
+  public var isValidHexadecimal: Bool {
+    let chars = CharacterSet(charactersIn: "0123456789ABCDEF").inverted
+    guard self.count != 0, self.rangeOfCharacter(from: chars, options: .caseInsensitive, range: nil) == nil else {
+      return false
+    }
+    return true
+  }
+
   public func substring(from: Int, to: Int) -> String {
     let start = self.index(self.startIndex, offsetBy: from)
     let end = self.index(self.endIndex, offsetBy: to)
