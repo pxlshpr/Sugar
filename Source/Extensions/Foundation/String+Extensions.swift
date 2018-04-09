@@ -15,7 +15,7 @@ public extension String {
     let end = self.index(self.endIndex, offsetBy: to)
     let range = start..<end
     
-    return self.substring(with: range)
+    return String(self[range])
   }
   
   public static func randomHexString(ofLength length: Int) -> String {
